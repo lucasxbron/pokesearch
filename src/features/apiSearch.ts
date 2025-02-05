@@ -12,7 +12,7 @@ export async function searchPokemon() {
     const query = searchInput.value.trim();
     if (!query) {
       app.innerHTML =
-        '<div class="text-center text-yellow-300">Please enter a Pokémon ID or name.</div>';
+        '<div class="text-center text-blue-900">Please enter a Pokémon ID or name.</div>';
       return;
     }
 
@@ -50,7 +50,7 @@ export async function searchPokemon() {
           `;
     } catch (error) {
       app.innerHTML =
-        '<div class="text-center text-yellow-300">Error fetching Pokémon data. Please try again.</div>';
+        '<div class="text-center text-blue-900">Error fetching Pokémon data. Please try again.</div>';
       console.error(error);
     }
   });
