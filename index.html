@@ -1,13 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokéSearch</title>
+</head>
+
+<body class="bg-gradient-to-b from-blue-400 to-blue-200 h-screen"></body>
+  <!-- <h1 class="font-accent mt-28 text-yellow-500 font-extrabold text-4xl text-center">PokéSearch</h1> -->
+  <div class="mt-24 mb-4 flex justify-center">
+    <img src="/images/pokesearch.png" alt="">
+  </div>
+  <div class="mb-12 flex justify-center">
+    <img src="/images/pokesearch-find.png" class="w-44 h-auto" alt="">
+  </div>
+  <!-- <p class="mb-6 text-xl text-poke-yellow text-center font-extrabold uppercase">Find em' all!</p> -->
+  <section class="flex justify-center flex-row mt-4 gap-1">
+    <input type="text" id="search" placeholder="Search Pokémon"
+      class="px-4 py-2 border-2 border-poke-yellow bg-white rounded-md focus:outline-none focus:ring focus:ring-amber-400" />
+    <button id="searchButton"
+      class="px-4 py-2 bg-poke-yellow text-white rounded-md hover:bg-amber-400 focus:outline-none font-bold uppercase">Search</button>
+    </div>
+  </section>
+  <div id="app" class="mt-6">
+
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
