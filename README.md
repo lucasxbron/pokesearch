@@ -1,2 +1,2 @@
 # PokéSearch
-PokéSearch is a web application that allows users to search for information about their favorite Pokémon. It provides detailed information on each Pokémon, including their types, abilities, stats, and evolutions. The application is built using modern web technologies and integrates with the PokéAPI to fetch real-time data.
+PokéSearch is a web application that allows users to search for information about their favorite Pokémon. It provides detailed information on each Pokémon, including their types, abilities and stats. The application is built using modern web technologies and integrates with the PokéAPI to fetch real-time data.
