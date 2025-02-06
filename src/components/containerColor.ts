@@ -5,7 +5,7 @@ const typeColors: { [key: string]: string } = {
   grass: "bg-green-500",
   electric: "bg-poke-yellow",
   ice: "bg-blue-200",
-  fighting: "bg-red-700",
+  fighting: "bg-red-600",
   poison: "bg-purple-500",
   ground: "bg-yellow-700",
   flying: "bg-blue-300",
@@ -38,6 +38,7 @@ async function fetchPokemonTypeAndSetColor(pokemonName: string) {
       `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
     );
     const data = await response.json();
+    console.log("response:", response);
     if (data.types && data.types.length > 0) {
       const type = data.types[0].type.name;
       console.log("type:", type);
@@ -54,5 +55,4 @@ async function fetchPokemonTypeAndSetColor(pokemonName: string) {
   }
 }
 
-// export { fetchPokemonTypes };
 export { fetchPokemonTypeAndSetColor };
