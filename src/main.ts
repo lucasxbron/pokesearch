@@ -20,8 +20,10 @@ if (searchButton && app) {
     // setTimeout(async () => {
     //     await searchPokemon(query, searchButton, searchInput, app);
     //   }, 2000);
-    await searchPokemon(query, searchButton, searchInput, app);
-    await fetchPokemonTypeAndSetColor(query);
+
+      await searchPokemon(query, searchButton, searchInput, app);
+      await fetchPokemonTypeAndSetColor(query);
+
   });
 }
 

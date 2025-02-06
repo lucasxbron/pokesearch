@@ -8,31 +8,37 @@
   <title>PokéSearch</title>
 </head>
 
-<!-- <body class="bg-gradient-to-b from-blue-400 to-blue-200 min-h-screen"> -->
-  <body class="bg-gradient-to-b from-yellow-400 via-red-400 to-blue-400 min-h-screen">
 
-<!-- <h1 class="font-accent mt-28 text-yellow-500 font-extrabold text-4xl text-center">PokéSearch</h1> -->
-<div class="mt-24 mb-4 flex justify-center transition-transform transform hover:scale-102 drop-shadow-lg">
-  <img src="/images/pokesearch.png" class="max-w-[60%]" alt="">
-</div>
-<div class="mt-4 mb-4 flex justify-center transition-transform transform hover:scale-102 drop-shadow-lg">
-  <img src="/images/pokesearch-icon.ico" class="w-32 h-auto max-w-[20%]" alt="">
-</div>
-<div class="mb-10 flex justify-center transition-transform transform hover:scale-102 drop-shadow-lg">
-  <img src="/images/pokesearch-find.png" class="w-44 h-auto" alt="">
-</div>
-<!-- <p class="mb-6 text-xl text-poke-yellow text-center font-extrabold uppercase">Find em' all!</p> -->
-<section class="flex justify-center flex-row mt-4 gap-1.5">
-  <input type="text" id="search" placeholder="Search Pokémon"
-    class="text-l px-8 py-4 border-2 border-poke-yellow bg-white rounded-md focus:outline-none focus:ring focus:ring-amber-400 transition-transform transform hover:scale-102 drop-shadow-lg" />
-  <button id="searchButton"
-    class="text-l px-8 py-4 bg-poke-yellow text-white rounded-md hover:bg-amber-300 focus:outline-none font-bold uppercase cursor-pointer transition-transform transform hover:scale-102 drop-shadow-lg">Search</button>
-  </div>
-</section>
-<div id="app" class="pokemon-container my-6">
-
-</div>
-<script type="module" src="/src/main.ts"></script>
+<body>
+  <section class="pb-6 bg-gradient-to-b from-yellow-400 via-red-400 to-blue-400 min-h-screen">
+    <div class="overflow-hidden">
+      <div class="mb-4 flex justify-center drop-shadow-lg transition-transform transform hover:scale-102 ">
+        <img src="/images/pokesearch.png" class="max-w-[60%] mt-24" alt="">
+      </div>
+      <div class="mt-4 mb-4 flex justify-center animate-breathe drop-shadow-lg">
+        <img src="/images/pokesearch-icon.ico" class="w-32 h-auto max-w-[20%]" alt="">
+      </div>
+      <div class="mb-10 flex justify-center transition-transform transform hover:scale-102 drop-shadow-lg">
+        <img src="/images/pokesearch-find.png" class="w-44 h-auto" alt="">
+      </div>
+    </div>
+    <!-- <p class="mb-6 text-xl text-poke-yellow text-center font-extrabold uppercase">Find em' all!</p> -->
+    <section class="flex justify-center flex-row mt-4 gap-1.5">
+      <input type="text" id="search" placeholder="Search Pokémon"
+        class="text-l px-8 py-4 border-2 border-poke-yellow bg-white rounded-md focus:outline-none focus:ring focus:ring-amber-400 transition-transform transform hover:scale-102 drop-shadow-lg" />
+      <button id="searchButton"
+        class="text-l px-8 py-4 bg-poke-yellow text-white rounded-md hover:bg-amber-300 focus:outline-none font-bold uppercase cursor-pointer transition-transform transform hover:scale-102 drop-shadow-lg">Search</button>
+      </div>
+    </section>
+    <div id="app">
+    </div>
+    <div class="mt-12 flex justify-center">
+      <div id="spinner" class="hidden">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
