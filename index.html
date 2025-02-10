@@ -11,18 +11,18 @@
 
 <body>
   <section class="pb-6 bg-gradient-to-b from-yellow-400 via-red-400 to-blue-400 min-h-screen">
-    <div class="overflow-hidden">
-      <div class="mb-4 flex justify-center drop-shadow-lg transition-transform transform hover:scale-102 ">
-        <img src="/images/pokesearch.png" class="max-w-[60%] mt-24" alt="">
+    <div class="max-w-[60%] m-auto overflow-hidden">
+      <div class="flex justify-center animate-breathe drop-shadow-lg">
+        <img src="/images/pokesearch-icon.ico" class="mt-24 w-32 h-auto max-w-[25%]" alt="PokeSearch Icon">
       </div>
-      <div class="mt-4 mb-4 flex justify-center animate-breathe drop-shadow-lg">
-        <img src="/images/pokesearch-icon.ico" class="w-32 h-auto max-w-[20%]" alt="">
+      <div class="mt-6 mb-4 flex justify-center drop-shadow-lg transition-transform transform hover:scale-102 ">
+        <img src="/images/pokesearch.png" alt="PokeSearch Logo">
       </div>
       <div class="mb-10 flex justify-center transition-transform transform hover:scale-102 drop-shadow-lg">
-        <img src="/images/pokesearch-find.png" class="w-44 h-auto" alt="">
+        <img src="/images/pokesearch-find.png" class="w-44 h-auto max-w-[50%]" alt="PokeSearch Subtitle Find em' all!">
       </div>
     </div>
-    <section class="flex justify-center flex-row mt-4 gap-1.5">
+    <section class="mx-6 flex justify-center flex-col mt-4 gap-1.5 sm:flex-row">
       <input type="text" id="search" placeholder="Search Pokémon"
         class="text-l px-8 py-4 border-2 border-poke-yellow bg-white rounded-md focus:outline-none focus:ring focus:ring-amber-400 transition-transform transform hover:scale-102 drop-shadow-lg" />
       <button id="searchButton"
